@@ -1,0 +1,245 @@
+html{
+	font-family : Gabriola;
+}
+body{
+	padding : 0px;
+	margin : 0px;
+}
+
+/*div design*/
+.main{
+	background : url(../image/main_background.jpg);
+	background-repeat : no-repeat;
+	background-size : cover;
+	position : relative;
+	width : 100%;
+	height : 100%;
+	margin : auto;
+}
+.ordersAndVouchers{
+	position : absolute;
+	top : 57px;
+	width : calc(100% - 2px);
+	height : calc(100% - 58px);
+	padding : 0px 1px;
+}
+.tablesAndOrders{
+	position : absolute;
+	width : 75%;
+	height : calc(100% - 2.5px);
+}
+.tableSet{
+	position : absolute;
+	background : rgba(178, 178, 178, 0.7);
+	width : calc(100% - 1px);
+	height : 50%;
+	border : 1px black solid;
+}
+.tables{
+	position : absolute;
+	overflow : scroll;
+	width : 100%;
+	height: calc(100% - 52px);
+}
+.menu{
+	position : absolute;
+	top : calc(50% + 5px);
+	width : calc(100% - 1px);
+	height : calc(50% - 5px);
+	border : 1px solid black;
+}
+.voucher{
+	position : absolute;
+	width : calc(25% - 8px);
+	height : calc(100% - 2px);
+	border : 1px solid black;
+	left : calc(75% + 5px);
+}
+
+/*font design*/
+.heading{
+	width : calc(100% - 2px);
+	border : 1px black solid;
+	position : absolute;
+	text-align : center;
+}
+.title{
+	background : linear-gradient(#3B241C, #986458);
+	font-weight : bold;
+	font-size : 30;
+	color : #F0F0F0;
+}
+
+/*tab design*/
+.menuItems{
+	position : absolute;
+	width : 100%;
+	height: calc(100% - 52px);
+}
+.mTabBtns{
+	position : absolute;
+	width : 20%;
+	height : 100%;
+	border: 1px solid black;
+}
+.mTabBtns > Button{
+	width : 100%;
+	border : none;
+	padding : 10% 0px;
+}
+#tabTitleFood{
+	background : linear-gradient(to right, #8DA61A, #d4f430);
+}
+#tabTitleFood:hover{
+	background : linear-gradient(to right, #d4f430, #8DA61A);
+}
+#btnBerverage{
+	background : linear-gradient(to right, #21130f, #663b2f);
+}
+#btnBerverage:hover{
+	background : linear-gradient(to right, #663b2f, #21130f);
+}
+#btnTopping{
+	background : linear-gradient(to right, #f9fc67 , #e055fc);
+}
+#btnTopping:hover{
+	background : linear-gradient(to right, #e055fc , #f9fc67);
+}
+.menuCollapseGrp{
+	position : absolute;
+	width : calc(80% - 2px);
+	height : 100%;
+	left : calc(20% + 1px);
+	border : 1px solid black;
+	overflow : scroll;
+}
+.menuCollapse{
+	display : none;
+}
+
+/* collapse design */
+.menuCollapse > button{
+	width : 100%;
+	padding : 2% 0px;
+	border : none;
+	font-weight : bold;
+	color : white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.collapseBody{
+	background : rgba(178, 178, 178, 0.7);
+}
+#cTitleSalad{
+	background : url(../image/collapse_head_salad.jpg);
+	background-position: center center;
+	background-size : cover;
+	background-repeat: no-repeat;
+}
+#cTitleTraditional{
+	background : url(../image/collapse_head_traditional.jpg);
+	background-position: center center;
+	background-size : cover;
+	background-repeat: no-repeat;
+}
+#cTitleCake{
+	background : url(../image/collapse_head_cake.jpg);
+	background-position: center center;
+	background-size : cover;
+	background-repeat: no-repeat;
+}
+#cTitleCoffee{
+	background : url(../image/collapse_head_coffee.jpg);
+	background-position: center center;
+	background-size : cover;
+	background-repeat: no-repeat;
+}
+#cTitleJuice{
+	background : url(../image/collapse_head_juice.jpg);
+	background-position: center center;
+	background-size : cover;
+	background-repeat: no-repeat;
+}
+#cTitleOreo{
+	background : url(../image/collapse_head_oreo.jpg);
+	background-position: center center;
+	background-size : cover;
+	background-repeat: no-repeat;
+}
+#cTitleJello{
+	background : url(../image/collapse_head_jello.jpg);
+	background-position: center center;
+	background-size : cover;
+	background-repeat: no-repeat;
+}
+#cTitleCoconut{
+	background : url(../image/collapse_head_coconut.jpg);
+	background-position: center center;
+	background-size : cover;
+	background-repeat: no-repeat;
+}
+#cTitleCinnamon{
+	background : url(../image/collapse_head_cinnamon.jpg);
+	background-position: center center;
+	background-size : cover;
+	background-repeat: no-repeat;
+}
+.collapseTitle span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.collapseTitle span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.collapseTitle:hover span {
+  padding-right: 25px;
+}
+
+.collapseTitle:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.collapseTitle:active span:after{
+	transform: rotate(90deg);
+}
+.menuCollapse > div{
+	display : none;
+}
+
+/*button design*/
+button.table
+{
+	margin : 2%;
+	border-radius : 10px;
+	width : 28%;
+	height : 20%;
+	background : #3B241C;
+	color : #f0f0f0;
+}
+
+/* scrollbar design */
+::-webkit-scrollbar {
+	width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-border-radius: 10px; border-radius: 10px; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: gray;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: gray;
+}
